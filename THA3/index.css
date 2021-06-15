@@ -1,0 +1,35 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#span-center {
+  text-align: center;
+}
+
+.vertical {
+  border-left: 5px solid black;
+  height: 400px;
+  left: 50%;
+  position: absolute;
+}
+
+#left-side {
+  float: left;
+  margin-left: 50px;
+  border: 3px solid red;
+  display: inline-block;
+}
+
+#right-side {
+  float: right;
+  margin-right: 50px;
+  border: 3px solid green;
+  display: inline-block;
+  
+}
+/* .boss{
+    border: 2px solid rgb(140, 140, 247);
+} */
+
+
+
