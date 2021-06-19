@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hands.css" />
+    <style>
+              body {
+        background-color: #0cbaba;
+        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+        font-family: 'Baloo Tammudu 2', cursive;
+        /* margin-top: 50px; */
+      }
+
+      .clock {
+        background-color: #20bf55;
+        background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+        border: 13px solid rgb(176, 189, 194);
+        border-radius: 50%;
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: auto;
+      }
+
+      ul {
+        list-style: none;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        /* border: 1px solid red; */
+        text-align: center;
+      }
+      li {
+        position: absolute;
+        transform-origin: 50% 100%;
+        height: 160px;
+      }
+
+      .hours {
+        left: 120px;
+        font-size: 23.3px;
+        letter-spacing: -1.6px;
+        line-height: 45px;
+      }
+
+      .hours li {
+        width: 80px;
+      }
+
+      .hours span {
+        display: block;
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(1) {
+        transform: rotate(30deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(1) span{
+          transform:rotate(-30deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(2) {
+        transform: rotate(60deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(2) span{
+          transform:rotate(-60deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(3) {
+        transform: rotate(90deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(3) span{
+          transform:rotate(-90deg) ; */
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(4) {
+        transform: rotate(120deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(4) span{
+          transform:rotate(-120deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(5) {
+        transform: rotate(150deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(5) span{
+          transform:rotate(-150deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(6) {
+        transform: rotate(180deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(6) span{
+          transform:rotate(-180deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(7) {
+        transform: rotate(210deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(7) span{
+          transform:rotate(-210deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(8) {
+        transform: rotate(240deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(8) span{
+          transform:rotate(-240deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(9) {
+        transform: rotate(270deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(9) span{
+          transform:rotate(-270deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(10) {
+        transform: rotate(300deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(10) span{
+          transform:rotate(-300deg) ;
+
+      }
+
+      /* to rotate list item */
+      .hours li:nth-of-type(11) {
+        transform: rotate(330deg);
+      }
+
+      /* to rotate number */
+      .hours li:nth-of-type(11) span{
+          transform:rotate(-330deg) ;
+
+      }
+
+              .hr-wrapper, .min-wrapper,.sec-wrapper{
+          /* border: 2px solid red; */
+          position: absolute;
+          width:320px;
+          height:320px;
+      }
+
+      .hand{
+          position:absolute;
+          bottom:50%;
+          border: 1px solid blueviolet;
+          transform-origin:50% 100%;
+      }
+
+      .hr{
+          background:rgb(147, 43, 231) ;
+          left:152px;
+          width:13px;
+          height:105px;
+          border-radius:10px;
+          animation: rotateHand 43200s linear infinite;
+      }
+
+      .hr:after{
+          background:#222;
+          border-radius: 50%;
+          content:"";
+          display:block;
+          position: absolute;
+          bottom:-8px;
+          width:13px;
+          height:16px;
+      }
+
+      .min{
+          background:rgb(134, 240, 143) ;
+          left:155px;
+          width:9px;
+          height:125px;
+          border-radius:8px;
+          animation: rotateHand 3600s linear infinite;
+      }
+
+
+      .min:after{
+          background:#222;
+          border-radius: 50%;
+          content:"";
+          display:block;
+          position: absolute;
+          bottom:-8px;
+          width:9px;
+          height:16px;
+      }
+
+      .sec{
+          background:rgb(114, 147, 236) ;
+          left:156.5px;
+          width:5px;
+          height:132px;
+          border-radius:8px;
+          animation: rotateHand 60s linear infinite;
+      }
+
+
+      .sec:after{
+          background:#222;
+          border-radius: 50%;
+          content:"";
+          display:block;
+          position: absolute;
+          bottom:-3.5px;
+          width:5px;
+          height:7px;
+      }
+
+      @keyframes rotateHand{
+          to{
+              transform: rotate(1turn);
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <ul class="hours">
+        <li>
+          <span>1</span>
+        </li>
+        <li>
+          <span>2</span>
+        </li>
+        <li>
+          <span>3</span>
+        </li>
+        <li>
+          <span>4</span>
+        </li>
+        <li>
+          <span>5</span>
+        </li>
+        <li>
+          <span>6</span>
+        </li>
+        <li>
+          <span>7</span>
+        </li>
+        <li>
+          <span>8</span>
+        </li>
+        <li>
+          <span>9</span>
+        </li>
+        <li>
+          <span>10</span>
+        </li>
+        <li>
+          <span>11</span>
+        </li>
+        <li>
+          <span>12</span>
+        </li>
+      </ul>
+      <div class="hr-wrapper" style="transform: rotate(199.5deg)">
+        <div class="hand hr"></div>
+      </div>
+      <div class="min-wrapper" style="transform: rotate(239.4deg)">
+        <div class="hand min"></div>
+      </div>
+      <div class="sec-wrapper" style="transform: rotate(324.288deg)">
+        <div class="hand sec"></div>
+      </div>
+    </div>
+    <script>
+      var date = new Date();
+      var hr = date.getHours() > 12 ? date.getHours() - 12 : date.getHours(),
+        min = date.getMinutes(),
+        sec = date.getSeconds(),
+        milsec = date.getMilliseconds();
+
+      //for hands
+      var hrAngle = hr * 30 + min / 2,
+        minAngle = min * 6 + (sec * 6) / 60,
+        secAngle = sec * 6 + (milsec * 0.36) / 1000;
+
+      function setAngle(wrappers, angle) {
+        document.querySelector('.' + wrapper).getElementsByClassName.transform =
+          'rotate(' + angle + 'deg)';
+      }
+      setAngle('hr-wrapper', hrAngle);
+      setAngle('min-wrapper', minAngle);
+      setAngle('sec-wrapper', secAngle);
+    </script>
+  </body>
+</html>
