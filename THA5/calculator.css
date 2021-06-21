@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.container {
+    background-image: linear-gradient(to right bottom, #2c0537, #83124a, #ce4640, #f5941c, #ebeb12);
+  width: 225px;height: 302px;
+  border-radius: 27px;
+  margin: 69px auto;
+}
+
+.input-container {
+  text-align: center;
+  padding-top: 43px;
+}
+
+.input-container input {
+  border-radius: 9px;
+  height: 26px;
+  width: 162px;
+}
+
+.buttons {
+  text-align: center;
+  padding-top: 36px;
+}
+
+.btn {
+    width: 35px;
+    margin: 5px 6px;
+    height: 26px;
+}
+

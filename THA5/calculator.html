@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input id="input" value="" type="text" />
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button class="btn" onClick="number('1')">1</button>
+          <button class="btn" onClick="number('2')">2</button>
+          <button class="btn" onClick="number('3')">3</button>
+          <button class="btn cbtn" onClick="clearit()">
+            <strong>C</strong>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onClick="number('4')">4</button>
+          <button class="btn" onClick="number('5')">5</button>
+          <button class="btn" onClick="number('6')">6</button>
+          <button class="btn cbtn" onClick="number('+')">
+            <strong>+</strong>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onClick="number('7')">7</button>
+          <button class="btn" onClick="number('8')">8</button>
+          <button class="btn" onClick="number('9')">9</button>
+          <button class="btn cbtn" onClick="number('*')">
+            <strong>*</strong>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onClick="number('.')">.</button>
+          <button class="btn" onClick="number('0')">0</button>
+          <button class="btn cbtn" onClick="number('-')">
+            <strong>-</strong>
+          </button>
+          <button class="btn cbtn" onClick="number('/')">
+            <strong>/</strong>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn cbtn" onClick="solve()"><strong>=</strong></button>
+          <button class="btn cbtn" onClick="number('%')">
+            <strong>%</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
