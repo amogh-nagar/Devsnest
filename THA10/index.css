@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(103, 117, 126);
+}
+.container {
+  margin: auto;
+  /* border: 2px solid rgb(243, 14, 14); */
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+img {
+  width: 100px;
+}
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  margin: 5px;
+  width: calc(25% - 10px);
+  height: calc(33.33% - 10px);
+  position: relative;
+  transform: scale(1);
+}
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(5, 14, 13);
+  position: absolute;
+  /* border: 2px solid yellow; */
+  backface-visibility: hidden;
+}
+
+/* //Now rotate front face by 180deg */
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2;
+}
+.front-face{
+    transform:rotateY(180deg)
+}

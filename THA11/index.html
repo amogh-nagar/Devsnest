@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <div class="score">
+          Score:
+          <p><span class="number1">0</span>/10</p>
+        </div>
+        <div class="question">
+          Questions:
+          <p><span class="number2">1</span>/10</p>
+        </div>
+      </div>
+      <div class="quiz-elements"   >
+        <h3>Who was the first president of india</h3>
+        <ul id="1">
+          <li class="option" >
+            <h4 >Gandhi ji</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li class="option">
+            <h4>Jawaharlal nehru</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li class="option">
+            <h4>Rajendra prasad</h4>
+            <button class="click" onclick="clickhandler(this)">Select answer</button>
+          </li>
+          <li class="option">
+            <h4>Narendra Modi</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+        </ul>
+        <div class="links">
+          <button  class="left b1" onclick="previous1()">Previous Question</button>
+          <button  class="right b1" onclick="next1()">Next Question</button>
+        </div>
+      </div>
+      <div class="quiz-elements" id="2">
+        <h3>Who was the first prime minister of india</h3>
+        <ul>
+          <li>
+            <h4>Lala Lajpat Rai</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Subhash Chandra bose</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Bill klinton</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Jawaharlal nehru</h4>
+            <button class="click" onclick="clickhandler(this)">Select answer</button>
+          </li>
+        </ul>
+        <div class="links">
+          <button  class="left b1" onclick="previous1()">Previous Question</button>
+          <button  class="right b1" onclick="next1()">Next Question</button>
+        </div>
+      </div>
+      <div class="quiz-elements">
+        <h3>Who was the first chief justice of india
+        </h3>
+        <ul>
+          <li>
+            <h4> Rajnedra Prasad</h4>
+            <button class="click"onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Harilal Jekisundas kania</h4>
+            <button class="click" onclick="clickhandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Chandan Mahajan</h4>
+            <button class="click"onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Bijan Kumar Mukharjea</h4>
+            <button class="click"onclick="wronghandler(this)">Select answer</button>
+          </li>
+        </ul>
+        <div class="links">
+          <button  class="left b1" onclick="previous1()">Previous Question</button>
+          <button  class="right b1" onclick="next1()">Next Question</button>
+        </div>
+      </div>
+      <div class="quiz-elements">
+        <h3>Who recieved first Padam Vibhushan</h3>
+        <ul>
+          <li>
+            <h4>Satyendra Nath</h4>
+            <button class="click"onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Sachine Tendulkar</h4>
+            <button class="click"onclick="wronghandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Akshay Kumar</h4>
+            <button class="click" onclick="clickhandler(this)">Select answer</button>
+          </li>
+          <li>
+            <h4>Sania nehwal</h4>
+            <button class="click" onclick="wronghandler(this)">Select answer</button>
+          </li>
+        </ul>
+        <div class="links">
+          <button  class="left b1"  onclick="previous1()">Previous Question</button>
+          <button  class="right b1"  onclick="next1()">Next Question</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" ></script>
+  </body>
+</html>

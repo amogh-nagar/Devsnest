@@ -1,0 +1,42 @@
+.container {
+  padding: 4px 5px;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+.text {
+  padding: 4px 5px;
+  margin: 5px 5px;
+}
+
+
+.inputs{
+    padding: 2px 4px;
+    border: 2px solid #6060ea;
+    margin: 2px 14px;
+}
+.input{
+    width: 163px;
+    height: 24px;
+}
+.btn{
+    width: 30px;
+height: 30px;
+}
+
+.listitem{
+   
+    margin: 12px 13px;
+padding: 13px 13px;
+border: 2px solid #acacf2;
+}
+.t{
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 2px 13px;
+}
+.crossbtn{
+    display: inline-block;
+    width: 25px;
+height: 25px;
+}

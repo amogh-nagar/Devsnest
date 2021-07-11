@@ -1,0 +1,128 @@
+body {
+  /* background-image: linear-gradient(to right, red, blue); */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(138, 229, 241),
+    rgb(239, 240, 178)
+  );
+  /* background: transparent; */
+}
+
+.container {
+  border-radius: 56px;
+  /* --webkit-filter:blur(5px) */
+  filter: drop-shadow(8px 8px 10px gray);
+}
+/* .left{
+    display: none;
+} */
+ul {
+  list-style: none;
+
+  display: grid;
+  width: 68%;
+  grid-template-columns: auto auto;
+  grid-gap: 12px 1px;
+}
+.quiz-elements {
+  display: none;
+}
+
+li {
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 232px;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: 11px 0;
+}
+.score {
+  display: inline-block;
+  padding: 0px 18px;
+}
+.score p {
+  display: inline-block;
+}
+
+.question p {
+  display: inline-block;
+  padding: 0px 9px;
+}
+.question {
+  display: inline-block;
+}
+.quiz-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 67px;
+}
+h3 {
+  position: relative;
+  padding: 0 23px;
+  width: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  border: 2px solid black;
+  border-radius: 67px;
+  height: 48px;
+}
+
+.text {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px auto;
+}
+.click {
+  padding: 4px 5px;
+  margin: 6px 3px;
+  font-family: 'Raleway', sans-serif;
+  border: 2px solid blueviolet;
+  border-radius: 12px;
+}
+button:hover,
+button:active {
+  background-color: rgb(182, 190, 238);
+}
+
+.remove{
+  display:none
+}
+
+.b1 {
+  padding: 0 30px;
+  border-radius: 10px;
+padding: 4px 29px;
+background-image: linear-gradient(to right,chocolate,yellow);
+color: white;
+}
+ button[class="b1"]:active{
+  background-color: red;
+}
+
+.links {
+  padding: 6px 0;
+}
+
+
+.red{
+  background-image:linear-gradient(to right, rgb(240, 59, 59),rgb(247, 247, 205));
+}
+.green{
+  background-image:linear-gradient(to right, rgb(89, 240, 59),rgb(205, 247, 233));
+
+}

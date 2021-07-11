@@ -1,0 +1,75 @@
+body {
+  overflow: hidden;
+  background-color: #0e12f0;
+}
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85%;
+  width: 100%;
+  background: #0082ec; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3bd9f5,
+    #2b7df8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #67e6fc,
+    #004bec
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 100% 100%;
+  transform: scaleX(1.5);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+header {
+  z-index: 1;
+  color: #222555;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  border: 2px solid aquamarine;
+}
+
+main input {
+  border: 2px solid lightblue;
+  width: 172px;
+  height: 21px;
+  z-index: 1;
+}
+
+main button {
+  width: 52px;
+  height: 25px;
+  padding: 3px 2px;
+  margin: 2px 4px;
+  z-index: 1;
+}
+
+footer {
+  width: 26%;
+  display: flex;
+  border: 2px solid aliceblue;
+  margin: 10px 12px;
+  z-index: 1;
+}
+
+.tempinfo {
+  width: 184%;
+  padding: 6px;
+  z-index: 1;
+}
