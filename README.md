@@ -1,5 +1,5 @@
 # These are the links for the THAS given by Devsnest😍
-JS is 👀✔ <br>
+JS is lub 👀✔ <br>
 Learned a lot of new things 🤩❤
 <br>
 THA16💻 - <a target="_blank" href=" https://tha16-card-devsnest.netlify.app">Sub1</a> ,
