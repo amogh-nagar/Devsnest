@@ -1,0 +1,30 @@
+.form{
+    height:200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form label{
+    color:aquamarine;
+    margin: 12px 2px;
+    
+}
+
+
+.form input{
+    border:2px solid rgb(9, 63, 45);
+    border-radius: 5px;
+    width:200px
+}
+
+.form input:focus{
+    outline: none;
+    background: #c92793;
+    border-color: #8b005d;
+
+}
+
+
