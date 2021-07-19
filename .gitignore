@@ -7,3 +7,5 @@ THA20/node_modules
 THA21/node_modules
 THA24/node_modules
 node_modules
+# Local Netlify folder
+.netlify
