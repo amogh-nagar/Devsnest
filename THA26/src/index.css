@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: #ccc;
+}
+
+.input-div {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-div input {
+  margin: 12px 20px;
+  background-color: white;
+}
+
+.name {
+  /* text-align: center; */
+  height: auto;
+  background-color: rgb(10, 189, 180);
+
+  /* width:auto; */
+
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px 7px rgba(0, 0, 0, 0.75);
+  margin: 10px 12px;
+  padding: 7px 10px;
+}
+.name h2 {
+  /* word-wrap: break-word; */
+  height: auto;
+  align-self: stretch;
+  text-overflow: ellipsis; /* will make [...] at the end */
+  width: 370px;
+  white-space: nowrap;
+  overflow: auto;
+}
+input[type="text"] {
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  background: rgb(54, 45, 45);
+  color: white;
+}
+input:focus {
+  outline: none;
+  background-color: rgb(75, 67, 58);
+}
+.email {
+  /* text-align: center; */
+  height: auto;
+  background-color: rgb(10, 189, 180);
+  /* width:auto; */
+
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px 7px rgba(0, 0, 0, 0.75);
+  margin: 10px 12px;
+  padding: 7px 10px;
+}
+.email h2 {
+  /* word-wrap: break-word; */
+  height: auto;
+  align-self: stretch;
+  text-overflow: ellipsis; /* will make [...] at the end */
+  width: 370px;
+  white-space: nowrap;
+  overflow: auto;
+}
+.field {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  background-color: rgb(24, 92, 86);
+  width: 50vw;
+  height: 80vh;
+  margin: 10px auto;
+  padding: 25px 30px;
+  box-shadow: 5px 10px 15px 7px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.field label {
+  font-size: 1.5rem;
+}
+
+.message {
+  text-align: center;
+}
+
+.message h1 {
+  font-size: 20px;
+}
