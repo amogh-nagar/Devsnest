@@ -1,4 +1,4 @@
-# These are the links for the THAS given by Devsnest😍
+# These are the links 0f the THAS given by Devsnest😍
 JS is lub 👀✔ <br>
 Learned a lot of new things 🤩❤
 <br>
